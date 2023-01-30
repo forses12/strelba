@@ -6,5 +6,5 @@ def pain():
         if u.type==pygame.QUIT:
             exit()
         if u.type==pygame.KEYDOWN and u.key==pygame.K_SPACE:
-            model.j=True
+            model.m+=1
 
