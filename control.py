@@ -1,4 +1,5 @@
 import pygame,model
+# pygame.key.set_repeat(10)
 
 def pain():
     z=pygame.event.get()
