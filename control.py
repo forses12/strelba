@@ -8,4 +8,7 @@ def pain():
             exit()
         if u.type==pygame.KEYDOWN and u.key==pygame.K_SPACE:
             model.m+=1
+        if u.type==pygame.MOUSEBUTTONDOWN and u.button==pygame.BUTTON_LEFT and model.k.collidepoint(u.pos):
+            print(u.pos)
+
 
