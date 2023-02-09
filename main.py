@@ -1,12 +1,10 @@
-import time
+import time,pygame
 
-import pygame
-
-import model
-import view,control
+import view,model,control
 
 while True:
     time.sleep(1/100)
     view.draw()
     control.pain()
+
 
