@@ -1,6 +1,6 @@
 import time,pygame
 
-import view,model,control
+import view,control
 
 while True:
     time.sleep(1/100)

@@ -14,10 +14,13 @@ def rect(screen):
     pygame.draw.rect(screen, [255, 255, 255], model.k)
 
     for j in range(model.b):
-
-        pygame.draw.rect(screen, [255, 33, 0], model.r[j],1)
+        if j==2:
+            pygame.draw.rect(screen, [40,255, 0], model.r[j],5)
+        else:
+            pygame.draw.rect(screen, [255, 33, 0], model.r[j],1)
         a = pygame.transform.scale(a, [(model.h - 2) * 1.2, model.h - 2])
         screen.blit(a, [31, j * model.h + 30])
+
 
 
 
