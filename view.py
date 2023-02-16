@@ -3,7 +3,7 @@ import pygame
 screen = pygame.display.set_mode([1000, 600], )
 # screen = pygame.display.set_mode([0, 0], pygame.FULLSCREEN)
 import model
-a = pygame.image.load('images/space_gun1.png')
+a = pygame.image.load('images/space_gun8.png')
 a = pygame.transform.flip(a, True, False)
 
 
@@ -14,7 +14,7 @@ def rect(screen):
     pygame.draw.rect(screen, [255, 255, 255], model.k)
 
     for j in range(model.b):
-        if j==2:
+        if j==model.number:
             pygame.draw.rect(screen, [40,255, 0], model.r[j],5)
         else:
             pygame.draw.rect(screen, [255, 33, 0], model.r[j],1)

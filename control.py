@@ -7,12 +7,12 @@ def pain():
         if u.type==pygame.QUIT:
             exit()
         if u.type==pygame.KEYDOWN and u.key==pygame.K_SPACE:
-            model.m+=1
+            if model.m<=4:
+                model.m+=1
             model.rect()
         if u.type==pygame.MOUSEBUTTONDOWN and u.button==pygame.BUTTON_LEFT and model.k.collidepoint(u.pos):
-            print(u.pos)
-        if u.type == pygame.MOUSEBUTTONDOWN and u.button == pygame.BUTTON_LEFT and model.r.collidepoint(u.pos):
-            model.k=True
-            print(model.j)
+            model.black_jack(u.pos)
+
+
 
 
