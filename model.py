@@ -2,7 +2,7 @@ import pygame,random
 
 screen=pygame.display.get_surface()
 m=0
-r=[]
+
 number=None
 number_gun=[]
 gun=[]
@@ -11,21 +11,21 @@ gun=[]
 k=pygame.Rect([25, 25, screen.get_width() - 50, screen.get_height() - 50])
 def black_jack(u):
     global number
-    for g in r:
-        if g.collidepoint(u):
-            number =r.index(g)
+    for g in gun:
+        if g['rect'].collidepoint(u):
+            number =g
 
 
 def guns():
-    gun1={'name':0,
+    gun1={'name':random.randint(1,8),
           'rect':None}
     gun.append(gun1)
-    print(gun)
 guns()
 guns()
 guns()
 
 def rect():
+    global h
     b =len(gun)
     h =(screen.get_height() - 60) /b
     for j in range(b):
@@ -35,3 +35,239 @@ def rect():
 rect()
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print(gun)
