@@ -30,6 +30,7 @@ def rect(screen):
             screen.blit(g,j['rect'])
         else:
             screen.blit(f,j['rect'])
+        pygame.draw.ellipse(screen,[0,0,0],[600,j['rect'].h/2+j['rect'].y,25,15],100)
 
 
 

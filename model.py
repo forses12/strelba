@@ -17,12 +17,12 @@ def black_jack(u):
 
 
 def guns():
-    gun1={'name':random.randint(1,8),
+    gun1={'name':random.randint(0,7),
           'rect':None}
     gun.append(gun1)
 guns()
-guns()
-guns()
+
+
 
 def rect():
     global h
